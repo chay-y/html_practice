@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- UTF-8은 한글이 깨지지 않게 인코딩해주는 방식 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- method : 서버로 전송할 http방식 ``` get방식 / post방식 -->
+    <form action="dfd.jsp" method="post">
+        아이디 : <input type="text" name="id"><br>
+        비밀번호 : <input type="password" name="password"><br>
+        이메일 : <input type="email" name="email"><br><br>
+
+        체크상자 : <input type="checkbox" id="h1" name="hobby">
+                    <label for="h1">운동</label>
+<!-- id와 for을 h1이라는 동일 값으로 연결 ``` 운동이라는 글자를 눌러도 체크박스에 체크가 됨-->
+                    <input type="checkbox" id="h2" name="hobby">
+                    <label for="h2">게임하기</label>
+
+                    <input type="checkbox" id="h3" name="hobby">
+                    <label for="h3">잠자기</label>
+                    
+                    <input type="checkbox" id="h4" name="hobby">
+                    <label for="h4">음악듣기</label>
+<!-- id의 값은 중복될 수 없다 -->
+        <br><br>
+        라디오버튼 : 
+<!-- input태그를 label태그로 묶어도 글자를 눌렀을 때 라디오버튼 체크가 된다-->
+<!-- radio, checkbox 등 name을 설정해 두면 서버전송시 용의하다 -->
+            <label><input type="radio" name="location"> 서울</label>
+            <label><input type="radio" name="location"> 부산</label>
+            <label><input type="radio" name="location"> 울산</label>
+            <label><input type="radio" name="location"> 제주</label>
+
+        <br><br>
+
+        통신사 : <select name="" id="">
+                    <option value="">SKT</option>
+                    <option value="">Kt</option>
+                    <option value="">LGU+</option>
+                </select>
+
+        <br><br>
+
+        내용 : <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="전송">
+        <input type="reset">
+
+        <br>
+
+        <button type="submit">전송2</button>
+
+    </form>
+</body>
+</html>

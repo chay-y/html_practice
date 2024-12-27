@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+<body>
+    <div id="top">
+        <h1 style="text-align: center;">회원가입</h1>
+        <hr><br>
+        <form action="???" method="post">
+            <table border="1px" style="margin-left:auto;margin-right:auto;">
+                <tr>
+                    <td style="width: 150px;"><b><label for="name">이름<span style="color: red;"><strong>*</strong></span></label></b></td>
+                    <td><input id="name" type="text" name="name"></td>
+                    <td style="width: 150px;"><b>성별<span style="color: red;"><strong>*</strong></span></b></td>
+                    <td>
+                        <input type="radio" name="gender">남
+                        <input type="radio" name="gender">여
+                    </td>
+                </tr>
+                <tr>
+                    <td><b><label for="phonenumber">휴대폰 번호<span style="color: red;"><strong>*</strong></span></label></b></td>
+                    <td colspan="3">
+                        <select name="phonenumber" id="phonenumber">
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                            <option value="016">016</option>
+                            <option value="017">017</option>
+                            <option value="018">018</option>
+                            <option value="019">019</option>
+                        </select>
+                        -
+                        <input type="text" size="3" maxlength="4">
+                        -
+                        <input type="text" size="3" maxlength="4">
+                        <button>휴대폰 번호 중복확인</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b><label for="Authentication">인증번호 입력<span style="color: red;"><strong>*</strong></span></label></b></td>
+                    <td colspan="3">
+                        <input id="Authentication" type="text" maxlength="12" placeholder="인증번호를 입력해 주세요.">
+                        <button>인증번호 받기</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b><label for="password">비밀번호<span style="color: red;"><strong>*</strong></span></label></b></td>
+                    <td colspan="3">
+                        <input type="password" name="password" id="password" maxlength="20" placeholder="비밀번호를 입력해 주세요.">
+                        <p style="color: gray;">※ 영문자, 숫자, 특수문자를 조합하여 8 ~ 20글자 이하로 입력하세요<br>
+                            ※ 비밀번호는 남들이 쉽게 유추할 수 없는 것으로, 되도록이면 영문자, 숫자,
+                            특수문자 모두 1글자 이상 포함되어야 합니다.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b><label for="checkpassword">비밀번호 확인<span style="color: red;"><strong>*</strong></span></label></b></td>
+                    <td colspan="3">
+                        <input type="password" name="checkpassword" id="checkpassword" placeholder="비밀번호 확인">
+                        <p style="color: gray;">※ 위에 입력하신 비밀번호를 한번 더 입력해 주십시오</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b><label for="birth">생년월일<span style="color: red;"><strong>*</strong></span></label></b></td>
+                    <td colspan="3">
+                        <input id="birth" type="text" size="3" maxlength="4">년&nbsp;
+                        <input type="text" size="2" maxlength="2">월&nbsp;
+                        <input type="text" size="2" maxlength="2">일
+                    </td>
+                </tr>
+                <tr>
+                    <td><b><label for="adress">주소</label></b></td>
+                    <td colspan="3">
+                        <input type="text" id="adress"><button>주소검색</button><br>
+                        <input type="text" size="70"><br>
+                        <input type="text" size="70">
+                    </td>
+                </tr>
+                <tr>
+                    <td><b><label for="email">이메일</label></b></td>
+                    <td colspan="3">
+                        <input type="text" id="email">@
+                        <input type="text">
+                        <select name="mail" id="mail">
+                            <option value="직접입력">직접입력</option>
+                            <option value="naver.com">naver.com</option>
+                            <option value="hanmail.com">hanmail.com</option>
+                            <option value="daum.net">daum.net</option>
+                            <option value="nate.com">nate.com</option>
+                            <option value="gmail.com">gmail.com</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>SMS 수신</b></td>
+                    <td colspan="3">
+                        <input type="radio" name="sms">동의
+                        <input type="radio" name="sms">거부
+                        <p style="color: gray;">※ 선호장르 선택에 따라 기획공연 및 문화강좌 정보를 제공 받을 수 있습니다.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>선호 장르 선택</b></td>
+                    <td colspan="3">
+                        <input type="checkbox">&nbsp;국악
+                        <input type="checkbox">&nbsp;뮤지컬
+                        <input type="checkbox">&nbsp;오페라
+                        <input type="checkbox">&nbsp;대중콘서트
+                        <input type="checkbox">&nbsp;어린이공연
+                        <input type="checkbox">&nbsp;클래식
+                        <input type="checkbox">&nbsp;무용(발레)
+                        <input type="checkbox">&nbsp;연극
+                        <input type="checkbox">&nbsp;기타
+                        <hr>
+                        <input type="checkbox">&nbsp;문화강좌
+                    </td>
+                </tr>
+                
+            
+            </table>
+            <p style="text-align: center;">
+                <input type="reset" value="취소">
+                <input type="submit" value="다음">
+            </p>
+        </form>
+    </div>
+    <div style="text-align: right;"><a href="#top"><button>▲<br>top</button></a></div>
+    
+
+</body>
+</html>

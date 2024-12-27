@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="??" method="post">
+        <p>
+            아이디
+            <input type="text" name="id">
+        </p>
+
+        <p>
+            이름
+            <input type="text" name="name">
+        </p>
+
+        <p>
+            비밀번호
+            <input type="password" name="password">
+        </p>
+
+        <p>
+            이메일
+            <input type="text" name="email">
+            @ 
+            <select name="" id="">
+                <option value="">직접입력</option>
+                <option value="naver.com">naver.com</option>
+                <option value="gmail.com">gmail.com</option>
+                <option value="daum.net">daum.net</option>
+            </select>
+        </p>
+
+        <p>
+            문자 수신 여부
+            <label><input type="radio" name="sns">예 </label>
+            <label><input type="radio" name="sns">아니요</label>
+        </p>
+
+        <P>
+            가입 경로
+            <label><input type="checkbox" name="subscription">친구소개</label>
+            <label><input type="checkbox" name="subscription">인터넷 검색</label>
+            <label><input type="checkbox" name="subscription">블로그</label>
+            <label><input type="checkbox" name="subscription">기타</label>
+        </P>
+
+        <input type="reset" value="지우기">
+        <input type="submit" value="전송">
+
+    </form>
+
+    <hr>
+
+    <h1>문의 글 남기기</h1>
+    <form action="???" method="post">
+        <table>
+            <tr>
+                <td>이름</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>제목</td>
+                <td><input type="text" name="title"></td>
+            </tr>
+            <tr>
+                <td>내용</td>
+                <td><textarea name="textarea" id="" cols="60" rows="15"></textarea></td>
+            </tr>
+        </table>
+
+        <input type="submit" value="저장">
+        <input type="reset" value="초기화">
+    </form>
+
+    <hr>
+      
+    
+</body>
+</html>
